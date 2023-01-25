@@ -1,0 +1,50 @@
+{% extends 'layouts/index.html' %}
+
+{#{% block content %}#}
+{#    <style type="text/css">#}
+{#        .product {#}
+{#            width: 80%;#}
+{#            margin-left: 10%;#}
+{#        }#}
+{#        .product > h1 {#}
+{#            color: yellow;#}
+{#        }#}
+{#        .dates {#}
+{#            display: flex;#}
+{#            justify-content: space-between;#}
+{#        }#}
+{#        .comments_title {#}
+{#            margin-top: 20px;#}
+{#        }#}
+{#        .comment {#}
+{#            background: #242b2e;#}
+{#            padding: 10px;#}
+{#            color: red;#}
+{#            margin-bottom: 20px;#}
+{#        }#}
+{#    </style>#}
+{##}
+{#    <div class="product">#}
+{#        <h1>{{ product.title }}</h1>#}
+{#        <h5>{{ product.description }}</h5>#}
+{#        <h5>Rate: {{ product.rate }}</h5>#}
+{#        <div class="dates">#}
+{#            <h5>{{ product.create_date }}</h5>#}
+{#            <h5>{{ product.modified_date }}</h5>#}
+{#            </div>#}
+{#        <h5 class="comments_title">Comments</h5>#}
+{#        <div class="comments">#}
+{#            {% for comment in comments %}#}
+{#                <div class="comment">#}
+{#                    <h5>{{ comment.text }}</h5>#}
+{#                    <p>{{ comment.created_date }}</p>#}
+{#                </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+{#{% endblock %}#}
+
+
+{% block content %}
+    <h1>{{ products.title }}</h1>
+{% endblock %}
